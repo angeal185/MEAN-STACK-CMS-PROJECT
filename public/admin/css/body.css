@@ -1,0 +1,88 @@
+body{
+    font-family: arial;
+    font-size: 12pt;
+    color: #ff973b;
+}
+
+
+@media screen and (min-width: 1200px){
+    body{    
+        font-size: 12pt;    
+    }
+
+}
+
+
+@media screen and (max-width: 1200px){
+    body{    
+        font-size: 12pt;    
+    }
+}
+
+@media screen and (max-width: 1000px){
+    body{    
+        font-size: 10pt;    
+    }
+}
+
+
+
+@media screen and (max-width: 800px){
+    body{    
+        font-size: 10pt;    
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{    
+        font-size: 8pt;    
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    body{    
+        font-size: 8pt;    
+    }
+}
+
+.warning{
+    float: left;
+    width: 80%;
+    margin: 10% 0 0 10%;
+    text-align: center;
+    font-size: 16pt;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+.messageSuccess{
+    color: green;
+}
+.messageFail{
+    color: red;
+}
+
+.navbar-brandfocus {
+  color: white;  
+  background-color: transparent;  
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #464646;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #252525;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+
+}
