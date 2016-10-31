@@ -1,0 +1,55 @@
+{
+  "name": "MeanCms",
+  "version": "1.0.0",
+  "description": "MeanCms",
+  "keywords": [
+    "Mean CMS",
+
+  ],
+  "author": {
+    "name": "Ben Eaves",
+    "url": "https://angeal185.github.io"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "atob": "^2.0.3",
+    "basic-auth": "^1.0.4",
+    "body-parser": "^1.15.2",
+    "btoa": "*",
+    "consolidate": "^0.14.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^1.2.0",
+    "ejs": "^2.5.2",
+    "errorhandler": "^1.1.1",
+    "express": "^4.14.0",
+    "handlebars": "^4.0.5",
+    "hbs": "^4.0.1",
+    "jade": "*",
+    "mongoose": "^4.6.5",
+    "morgan": "^1.7.0",
+    "multiparty": "^4.1.2",
+    "nib": "^1.1.2",
+    "node-rest-client": "^2.0.1",
+    "nodemailer": "^2.6.4",
+    "rss": "^1.2.1",
+    "stylus": "^0.54.5",
+    "tar": "*"
+  },
+  "bundleDependencies": [],
+  "private": true,
+  "main": "./server.js",
+  "bugs": {
+    "url": "null"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

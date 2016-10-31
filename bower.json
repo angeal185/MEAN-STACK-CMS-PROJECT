@@ -1,0 +1,29 @@
+{
+  "name": "meancms",
+  "authors": [
+    "ben eaves"
+  ],
+  "description": "mean-stack cms project",
+  "main": "",
+  "license": "MIT",
+  "homepage": "/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+   "dependencies": {
+    "jquery": "latest",
+    "angular": "latest",
+    "angular-bootstrap": "latest",
+    "angular-animate": "latest",
+    "angular-cookies": "latest",
+    "angular-resource": "latest",
+    "angular-route": "latest",
+    "bootstrap": "latest",
+    "fontawesome": "latest",
+  }
+}
