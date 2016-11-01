@@ -17,20 +17,13 @@ if (process.env.MEAN_CMS_DATABASE_NAME && process.env.MEAN_CMS_DATABASE_USERNAME
     //default database
     mongoConnectString += (conf.HOST + "/" + conf.DATABASE_NAME);
 }
-//---------add other mongoDB configuration blocks here----------------
-//
-//
-//
-//--------------------------------------------------------------------
+//add other mongoDB configuration blocks here
 
-
-
+//----------------------------------------------
 //mongoose.connect('mongodb://localhost/blogpost');
 mongoose.connect(mongoConnectString);
 
 var manager = require('../managers/manager');
-
-
 var accessLevelSchema = require('../databaseSchema/accessLevelSchema');
 var addonsSchema = require('../databaseSchema/addonsSchema');
 var articleLocationSchema = require('../databaseSchema/articleLocationSchema');
@@ -59,8 +52,6 @@ var workflowRuleSchema = require('../databaseSchema/workflowRuleSchema');
 var templateSchema = require('../databaseSchema/templateSchema');
 var mailServerSchema = require('../databaseSchema/mailServerSchema');
 var templateEngineSchema = require('../databaseSchema/templateEngineSchema');
-
-
 
 var AccessLevel = mongoose.model('AccessLevel', accessLevelSchema);
 var Addons = mongoose.model('Addons', addonsSchema);
@@ -392,7 +383,6 @@ initializeLanguage = function () {
     });
 };
 
-
 initializeTemplate = function () {
     //check if in database
     Template.find({}, function (err, results) {
@@ -441,7 +431,6 @@ initializeTemplate = function () {
     });
 };
 
-
 initializeRulesDeclaration = function () {
     //check if in database
     RuleDeclaration.find({}, function (err, results) {
@@ -472,8 +461,6 @@ initializeRulesDeclaration = function () {
         }
     });
 };
-
-
 
 initializeMailServer = function () {
     //check if in database
@@ -530,7 +517,6 @@ initialSections = function () {
                         console.log("section:" + JSON.stringify(secVal));
                         sec.save();
 
-
                         secVal.name = "Contacts";
                         sec = new Section(secVal);
                         console.log("section:" + JSON.stringify(secVal));
@@ -556,7 +542,6 @@ initialSections = function () {
         }
     });
 };
-
 
 initialCategories = function () {
     //check if is in database
@@ -586,7 +571,6 @@ initialCategories = function () {
                         console.log("category:" + JSON.stringify(catVal));
                         cat.save();
 
-
                         initialLocations();
 
                     } else {
@@ -597,7 +581,6 @@ initialCategories = function () {
         }
     });
 };
-
 
 initialLocations = function () {
     //check if is in database
@@ -618,7 +601,6 @@ initialLocations = function () {
                 var loc = new Location(locVal);
                 console.log("Location:" + JSON.stringify(locVal));
                 loc.save();
-
 
                 locVal.name = "Right";
                 loc = new Location(locVal);
