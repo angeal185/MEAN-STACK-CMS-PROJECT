@@ -34,7 +34,7 @@ templateEngineUtility.getDefaultTemplateEngine(function (templateEngineRnt) {
         var self = this;
 
         self.setupVariables = function () {
-            //  Set the environment variables we need.
+            //  Set the environment variables
             self.ipaddress = process.env.OPENSHIFT_NODEJS_IP || process.env.MEANCMS_IP;
             self.port = process.env.OPENSHIFT_NODEJS_PORT || process.env.MEANCMS_PORT || conf.PORT;
             if (typeof self.ipaddress === "undefined" && !process.env.MONGO_PORT_27017_TCP_ADDR) {
